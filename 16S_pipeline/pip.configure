@@ -1,0 +1,44 @@
+#./extra/code/match_otu_to_tax.py
+#./extra/code/map.pl
+#./extra/code/bokulich.py
+#./extra/file/gold.fasta
+#/extra/file/taxonomy_7_levels.txt/usr/local/16S_pipeline/file
+#/extra/file/97_otu_taxonomy.txt
+#/extra/file/97_otus_silva.fasta
+#/extra/file/97_otus_gg.fasta
+
+DADA_fTL=275
+DADA_rTL=250
+DADA_fMaxEE=3
+DADA_rMaxEE=5
+
+CHIMERA_REF="/usr/local/16S_pipeline/file/gold.fasta"
+#PERL=$(which perl)
+VSEARCH=$(which vsearch)
+CUTADAPT=$(which cutadapt)
+CASPER="/usr/local/casper_v0.8.2/casper"
+FASTREE="/usr/local/16S_pipeline/file/FastTreeMP"
+DADA2_R="/home/16S_pipeline/code/execute_dada.R"
+
+MAKE_OTU="/home/16S_pipeline/code/make_otu_table2.py"
+MATCH_OTU="/home/16S_pipeline/code/match_otu_to_tax.py"
+PERL_SCRIPT="/home/16S_pipeline/code/map.pl"
+BOKULICH=""/home/16S_pipeline/code/bokulich.py""
+ID_TO_FULL="/home/16S_pipeline/code/id_to_fulltax.py"
+RE_REPL="/home/16S_pipeline/code/rereplication.py"
+
+DB_SILVA_128="/usr/local/16S_pipeline/file/97_otus_silva.fasta"
+TAX_REF_SILVA_128="/usr/local/16S_pipeline/file/taxonomy_7_levels.txt"
+TAX_ID_SILVA_128="/usr/local/16S_pipeline/file/taxonomy_7_silva_id2id.txt"
+
+DB_GG="/usr/local/16S_pipeline/file/97_otus_gg.fasta"
+TAX_REF_GG="/usr/local/16S_pipeline/file/97_otu_taxonomy.txt"
+TAX_ID_GG="/usr/local/16S_pipeline/file/97_otu_gg_id2id.txt"
+
+DB_SILVA_132="/usr/local/16S_pipeline/file/silva_132_rep_set_all_97.fna"
+TAX_REF_SILVA_132="/usr/local/16S_pipeline/file/silva_132_taxonomy_7_levels_all_97.txt"
+TAX_ID_SILVA_132="/usr/local/16S_pipeline/file/silva_132_taxonomy_7_levels_all_97_id2id.txt"
+
+DB_EZ="/usr/local/16S_pipeline/file/mod_eztaxon_qiime_full.fasta"
+TAX_REF_EZ="/usr/local/16S_pipeline/file/mod_eztaxon_id_taxonomy.txt"
+TAX_ID_EZ="/usr/local/16S_pipeline/file/mod_eztaxon_id_id.txt"

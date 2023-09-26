@@ -7,3 +7,10 @@
 Docker is available at https://docker.com
 ## Get and run AMAA docker image
     docker run --name amaa -v $(pwd):/home/ -it viva1109/amaa:1.02
+## Examples
+### Sequencing data processing
+    /home/16S_pipeline/pipeline_asv.sh -d /home/examples/AMAAtoy/fastq -c /home/16S_pipeline/pip.configure -z silva -p open -w T -s 1 -e 11 -o /home/examples/AMAAtoy/table -t 1 -f CCTACGGGNGGCWGCAG -r GACTACHVGGGTATCTAATCC
+### Cross-sectional metagenome-wide association analysis
+    bash 16S_pipeline/Stat_Analysis_pipeline.sh -d /home/examples/CrossSectional/data/ -D /home/examples/CrossSectional/result -t 2 -z silva -s 1 -e 3 -M TMAT15_oMirkat_ANCOM -p 1000 -c 3 -P pheno_togo.csv -C 0 -n Control_Case
+### Longitudinal metagenome-wide association analysis
+    bash 16S_pipeline/Stat_Analysis_pipeline_longitudinal.sh -d /home/examples/Longitudinal/data/ -D /home/examples/Longitudinal/result -t 2 -z ez -M LMM_NBMM_ZINBMM_mTMAT -P pheno_togo.csv -C 0 -n Control_Case -V BinTrait -v Cov1,Time -Z NULL -T Time

@@ -4,7 +4,6 @@
 Preprocessing steps such as OTU clustering, choice of OTU filtering threshold, rarefying can be a source of heterogeneity. AMAA is a package that envelope a pipeline building microbial count tables based on different databases and clustering method and the methods for metagenome-wide association analysis. It provides the convenient use of various methods for microbiome association analysis under a unified preprocessing and comparison the results based on different databases or clustering method.
 ### Mainteinor
 Kangjin Kim, Ph.D <rekki@channing.harvard.edu>
-Sungho Won, Ph.D <won1@snu.ac.kr>
 
 ## Installation
 ### Get tools and example datsets from github

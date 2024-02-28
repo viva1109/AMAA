@@ -14,6 +14,9 @@ Kangjin Kim, Ph.D <rekki@channing.harvard.edu>
 Docker is available at https://docker.com
 ### Get and run AMAA docker image
     docker run --name amaa -v $(pwd):/home/ -it viva1109/amaa:1.02
+
+- You may come across the following message while using an Apple M1 or M2 chip, but it has no impact on the software.
+  - "WARNING: The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested"
 ## Example 1: Sequencing data processing
 ### Analysis manual
     bash 16S_pipeline/AMAA_SEQ.sh -h

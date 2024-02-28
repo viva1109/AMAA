@@ -18,7 +18,7 @@ Docker is available at https://docker.com
 ### Analysis manual
     bash 16S_pipeline/AMAA_SEQ.sh -h
 ### Example run
-    bash 16S_pipeline/AMAA_SEQ.sh -d /home/examples/AMAAtoy/fastq -c /bash home/16S_pipeline/pip.configure -z silva -p open -w T -s 1 -e 11 -o /home/examples/AMAAtoy/table -t 1 -f CCTACGGGNGGCWGCAG -r GACTACHVGGGTATCTAATCC
+    bash 16S_pipeline/AMAA_SEQ.sh -d /home/examples/AMAAtoy/fastq -c /home/16S_pipeline/pip.configure -z silva -p open -w T -s 1 -e 11 -o /home/examples/AMAAtoy/table -t 1 -f CCTACGGGNGGCWGCAG -r GACTACHVGGGTATCTAATCC
 ## Example 2: Cross-sectional metagenome-wide association analysis
 ### Analysis manual
     bash 16S_pipeline/AMAA_STAT.sh -h
